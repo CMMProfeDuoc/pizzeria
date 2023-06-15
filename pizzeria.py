@@ -37,7 +37,7 @@ def imprimirLista (lista:list, nombre_lista:str) -> None:
 	for elemento in lista:
 		print(lista.index(elemento)+1, elemento[0], "$ ", elemento[1])
 
-def comprarItem (lista:list) ->
+def comprarItem (lista:list) -> int:
 	tam_lista = len(lista)
 	sel = int(input(">> "))-1
 	if (sel in range(0,tam_lista)):
